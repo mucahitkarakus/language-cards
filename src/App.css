@@ -30,3 +30,8 @@ h2 {
     margin: 2rem;
     color: white;
 }
+
+.map {
+    display: grid;
+    grid-template-columns: auto auto;
+}
