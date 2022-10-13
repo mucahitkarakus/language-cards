@@ -5,16 +5,16 @@ import Card from "./componenets/Cards.js"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <div>
-        <img src={resim} alt="sa" className="react-logo" />
+        <img src={resim} alt="sa" className="reactlogo" />
       </div>
-      <div className="down">
-        <h2>Language</h2>
-        <div className="map">
+      <div className="down-container">
+        <h2 className="h2">Language</h2>
+        <div className="main-container">
           {languages.map((language, index) => {
             return(
-              <div>
+              <div className="container">
                 <Card key={index}{...language}/>
               </div>
             )

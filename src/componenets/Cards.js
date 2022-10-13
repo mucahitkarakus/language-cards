@@ -1,32 +1,32 @@
 import React, {useState} from 'react';
-import "../App.css";
+import './Card.css'
 
-const Cards = ({name, img, options}) => {
-  
-  const [cart, setCart] = useState(true);
+const Card = ({name,img,options}) => {
+const [cart, setCart] = useState(true);
 
   return (
-    <div className='cards' onClick={() => setCart(!cart)} >
-      {
-        cart ? (
-          <div className='sas'>
-            <img src={img} alt={name} />
-            <h2>{name}</h2>
-          </div> ) : (
-            <p>
-              {options.map((e) => {
-                return(
-                  <ul>
-                    <li>{e}</li>
-                  </ul>
-                )
-              })}
-            </p>
-          )
-        
-      }
+    <main>
+
+    
+    <div className='card' onClick={() => setCart(!cart)}>
+    {cart ? (
+        <div className='card'>
+        <img src={img} alt={name} />
+        <h4>{name}</h4>
+        </div>  
+    )
+     : (<p>{options.map((e)=>{
+        return(
+            <ul>
+                <li>{e}</li>
+            </ul>
+        )
+     })}</p>)
+    }
+       
     </div>
+    </main>
   )
 }
 
-export default Cards
+export default Card
