@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-logo {
+    width: 300px;
+    margin: 1rem;
+
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem;
+}
