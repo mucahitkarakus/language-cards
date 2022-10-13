@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    background-color: #F0E68C;
 }
 
 .react-logo {
@@ -17,7 +19,14 @@ body {
 
 }
 
+.down {
+    background-color: #FF7F00;
+    width: 400px;
+    border-radius: 10px;
+}
+
 h2 {
     text-align: center;
     margin: 2rem;
+    color: white;
 }

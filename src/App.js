@@ -8,8 +8,9 @@ function App() {
       <div>
         <img src={resim} alt="sa" className="react-logo" />
       </div>
-      <div>
+      <div className="down">
         <h2>Language</h2>
+        
       </div>
     </div>
   );
